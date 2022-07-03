@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.chan{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    background-color: white;
+    display: flex;
+    transform: rotate(0deg);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+}
+.chan img{
+    width: 50%;
+    height: 50%;
+}
+
+.comics{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.comics.active{
+    background-color: rgb(219, 254, 242);
+}
+.comics .comics_content{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* sroll setting */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(85, 85, 85); 
+    border-radius: 10px;
+}
+
+.button_for_change{
+    width: 100px;
+    height: 200px;
+    /* background-color: blue; */
+    position: fixed;
+    top:30%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 99;
+}
+.button_for_change a{
+    text-decoration: none;
+}
+.button_for_change .color_comics{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(123, 123, 123);
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 50px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 10px;
+}
+.button_for_change .black_comics{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(123, 123, 123);
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 10px;
+}
+
+/* OPEN animation */
+
+.OPEN{
+    width: 100%;
+    height: 100vh;
+    background: #e3edf7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    animation-delay: 1s;
+    transition: 2s;
+}
+.skill{
+    width: 100%;
+    height: 100vh;
+    background: #e3edf7;
+    position: absolute;
+    top:40%;
+    left: 45%;
+    transform: translate(-10px,-10px);
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 2550, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 2550, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 2550, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number{
+    font-weight: 800;
+    color: #555;
+}
+circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}

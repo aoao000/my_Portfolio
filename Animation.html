@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Animation.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>漫畫</title>
+</head>
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+            </svg>
+          </a>
+          <h5 class="text-white h4">返回</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+<!-- OPEN animation -->
+<div class="OPEN" id="OPEN">
+  <div class="skill" id="skill">
+    <div class="outer">
+        <div class="inner">
+            <div id="number">
+              
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <defs>
+            <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63" />
+                <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+        </defs>
+        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+    </svg>
+  </div>
+</div>
+
+
+
+
+
+      <div class="button_for_change">
+        <a href="#s1"><div class="color_comics">彩漫</div></a>
+        <a href="#s2"><div class="black_comics">黑白漫</div></a>
+      </div>
+      <div class="comics">
+        <div id="change" class="chan" >
+            <img src="/swap.png" alt="">
+        </div>
+        <div class="comics_content" id="s1">
+            <img src="/Design/page0001.jpg" alt="">
+            <img src="/Design/page0002.jpg" alt="">
+            <div class="author">人物:李、背景:我</div>
+        </div>
+        <div class="comics_content an" id="s2">
+            <img src="/Design/漫畫完稿(背景+線搞+網點)FINISH1.jpg" alt="">
+            <img src="/Design/漫畫完稿(背景+線搞+網點)FINISH2.jpg" alt="">
+            <img src="/Design/漫畫完稿(背景+線搞+網點)FINISH3.jpg" alt="">
+            <img src="/Design/漫畫完稿(背景+線搞+網點)FINISH4.jpg" alt="">
+            <div class="author">人物:李、背景:我</div>
+        </div>
+      </div>
+
+
+      <script src="/Ainmation.js"></script>
+  </body>
+</html>

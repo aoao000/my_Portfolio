@@ -1,0 +1,259 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 200vh;
+    display: flex;
+    position: relative;
+    /* background-color: rgb(9, 32, 53); */
+}
+.container .timeline{
+    width: 10px;
+    height: 3000px;
+    background-color: black;
+    border-radius: 0 0px 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.container .timeline p{
+    position: absolute;
+    bottom: 0px;
+    margin: 40px;
+    font-size: 2em;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container .timeline span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    transform: translateX(-10px);
+    background-color: #000000;
+}
+.container .timeline span:nth-child(2){
+    position: absolute;
+    top:440px;
+}
+.container .timeline span:nth-child(3){
+    position: absolute;
+    top:810px;
+}
+.container .timeline span:nth-child(4){
+    position: absolute;
+    top:1190px;
+}
+.container .timeline span:nth-child(5){
+    position: absolute;
+    top:1570px;
+}
+.container .timeline span:nth-child(6){
+    position: absolute;
+    top:1945px;
+}
+.container .timeline span:nth-child(7){
+    position: absolute;
+    top:2325px;
+}
+.container .video_container{
+    width: 80%;
+    height: 190vh;
+    /* background-color: rgb(255, 117, 117); */
+    position: absolute;
+    top:0;
+    right: 5%;
+    margin: 0 20px 0px 20px;
+    padding: 10px;
+}
+/* 最外層 */
+.container .video_container .video_card{
+    width: 95%;
+    height: auto;
+    /* background-color: azure; */
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+/* scroll event */
+.container .video_container .video_card:nth-child(1).close{
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(2).close{
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(3){
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(3).open{
+    left: 0%;
+}
+.container .video_container .video_card:nth-child(3).close{
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(4){
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(4).open{
+    left: 0%;
+}
+.container .video_container .video_card:nth-child(4).close{
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(5){
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(5).open{
+    left: 0%;
+}
+.container .video_container .video_card:nth-child(5).close{
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(6){
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(6).open{
+    left: 0%;
+}
+.container .video_container .video_card:nth-child(6).close{
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(7){
+    left: -2000px;
+}
+.container .video_container .video_card:nth-child(7).open{
+    left: 0%;
+}
+.container .video_container .video_card:nth-child(7).close{
+    left: -2000px;
+}
+
+.container .video_container .video_card h1{
+    margin: 10px;
+    padding: 10px 10px 0px 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container .video_container .video_card h4{
+    margin: 0 0 0 20px;
+    padding: 10px 10px 0px 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* 第二層 */
+.container .video_container .video_card .video_card_for{
+    width: 100%;
+    height: 240px;
+    background-color: rgb(235, 250, 250);
+    display: flex;
+    flex-direction: row;
+    border-radius:20px;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.container .video_container .video_card .video_card_for .video_video{
+    width:50%;
+    height: 220px;
+    background-color: black;
+    border-radius:20px;
+    margin: 10px;
+    opacity: 1;
+}
+/* .container .video_container .video_card .video_card_for .video_video.active{
+    opacity: 1;
+} */
+.container .video_container .video_card .video_card_for h2{
+    margin: 20px;
+    font-weight: 900;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container .video_container .video_card .video_card_for p{
+    margin: 20px;
+    font-weight: 900;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.container .video_container .video_card .video_card_for .big{
+    width: 40px;
+    height: 220px;
+    margin: 10px;
+    position: relative;
+    top:0;
+    border-radius: 0 20px 20px 0;
+    background-color: aqua;
+    transition: 1s;
+}
+.container .video_container .video_card .video_card_for .big:hover{
+    background-color: black;
+}
+
+/* OPEN animation */
+
+.OPEN{
+    width: 100%;
+    height: 100vh;
+    background: #e3edf7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    animation-delay: 1s;
+    transition: 2s;
+}
+.skill{
+    width: 100%;
+    height: 100vh;
+    background: #e3edf7;
+    position: absolute;
+    top:40%;
+    left: 45%;
+    transform: translate(-10px,-10px);
+    display: block;
+    opacity: 1;
+    transition: 1s;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 2550, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(255, 255, 2550, 0.7),
+                -0.5px -0.5px 0px rgba(255, 255, 2550, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number{
+    font-weight: 800;
+    color: #555;
+}
+circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
